@@ -1,0 +1,68 @@
+$background: rgb(107, 88, 88) ;
+$imgcolor: white;
+$transcolor: white;
+
+
+body {
+    height: 1000px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 250px;
+        ul{  
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            li {
+            color: $imgcolor;
+            background-color: white;
+            transition-timing-function: linear;
+            transition-duration: 1s;
+                .images {
+                    color:orange;
+                    font-size: 100px;
+                }
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                        
+                    div{
+                        transition-duration: 0.2s;
+                        transition-timing-function: linear;
+                    }
+                    
+                    .trans{  
+                        transform: translateX(467px);
+                        opacity: 1;
+                      }
+                    }
+                    
+                }
+
+                .debug {
+                    border : 1px solid red;
+                }
+                }
+        }
+    }
+
+.trans{
+    opacity: 0;
+    display: inline;
+    position: absolute;
+    left: -250px;
+    background-color: $transcolor;
+    margin: auto;
+    padding: 80px;
+    font-size: 50px;
+
+}
